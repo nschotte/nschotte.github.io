@@ -55,7 +55,8 @@ h2 {
 
 h3 {
 	margin: 2rem; /*Three values again. You got the idea.*/
-	font-size: 1.1em;
+	
+font-size: 1.1em;
 	color:#fe8800; 
     font-family: Sutro, serif;  
     font-weight: 300;  
