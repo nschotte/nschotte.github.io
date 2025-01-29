@@ -8,7 +8,7 @@ img {
 }
 
 
-    header, footer {
+    header{
         background-color: #fe8800;
         padding:2em ;
         color:#feddbc;
@@ -82,4 +82,10 @@ ul
     li { 
         margin:0em 1em 0.75em;
     }
+footer { background-color: #fe8800;
+        padding:2em ;
+        color:#feddbc;
+	font-family: poppins, sans-serif;  
+    font-weight: 400;  
+    font-style: normal;}
 /*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
