@@ -61,16 +61,7 @@ font-size: 1.1em;
 
 
 
-p.directions 
-{font-family: poppins, sans-serif;  
-    font-weight: 400;  
-    font-style: normal;}
 
-p.ingredients {    
-    font-family: poppins, sans-serif;  
-    font-weight: 400;  
-    font-style: normal;
-	}
     
     ol,ul {
         margin:0em 1rem 0.75em;
