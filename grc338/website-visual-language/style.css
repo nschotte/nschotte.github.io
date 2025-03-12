@@ -183,6 +183,16 @@ article {
 	max-width: 40em;
 	margin: auto;
 }
+body {
+	cursor: url('custom-cursor.svg') 16 16, auto;
+  }
+  nav ul li a {
+	cursor: url('custom-cursor.svg') 16 16, pointer;
+  }
+  a, button, nav ul li a {
+	cursor: url('custom-cursor-01.svg') 16 16, pointer;
+  }
+  
 
 
 @media screen and (min-width: 60em){
