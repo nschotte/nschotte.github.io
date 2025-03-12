@@ -193,9 +193,7 @@ body {
 a, button, nav ul li a {
   cursor: url('custom-cursor1.svg') 16 16, pointer;
 }
-{
-  cursor: url('custom-cursor.svg') 16 16, auto !important;
-}
+
   
 
 
