@@ -154,10 +154,10 @@ p.slogan {
 }
 	
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-  height: 3rem; 
+  height: auto; 
   box-sizing: border-box;
   padding: 1em 1em;
   background: #a0a92f;
