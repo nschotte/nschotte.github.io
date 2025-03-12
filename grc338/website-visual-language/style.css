@@ -190,11 +190,11 @@ body {
   }
   nav ul li a {
 	
-	  cursor: url('custom-cursorclickwhite-01.svg') 16 16, auto;
+	  cursor: url('custom-cursorclickwhite-01.svg') 16 16, pointer;
   }
   a, button, nav ul li a {
 
-	    cursor: url('custom-cursorclickwhite-01.svg') 16 16, auto;
+	    cursor: url('custom-cursorclickwhite-01.svg') 16 16, pointer;
   }
   
 
