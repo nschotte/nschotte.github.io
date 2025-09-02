@@ -1,0 +1,268 @@
+/*CSS document*/
+
+/* === Fonts === */
+@import url("https://use.typekit.net/wbh2wtg.css");
+
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s,
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol,
+ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr,
+th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header,
+hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;
+}
+
+/* === Base === */
+body{
+  background-color:#F5F5F5;   
+  color:#111111;              
+  font-family:"amifer",sans-serif;
+  font-weight:400;
+  font-style:normal;
+  line-height:1.6;
+}
+
+
+img, svg{ width:100%; display:block; }
+
+/* Unify wrappers so header/nav width is identical across pages */
+div.container,
+div.home-container{ max-width:40em; margin:auto; }
+
+
+header{
+  display:flex; align-items:center; justify-content:space-between; gap:1rem;
+  padding:0.75em 0.5em;
+  border-bottom:3px solid #A82222;   /* red underline */
+  background:#F5F5F5;
+}
+
+
+h1{ max-width:14em; margin:1em 0.5em; }
+h1 img, h1 svg{ width:100%; height:auto; display:block; }
+
+/* === Links === */
+a{ text-decoration:none; color:#111111; transition:color .25s ease; }
+a:hover{ color:#205AA9; }
+
+/* === NAV (Eco) === */
+nav{ margin:0; }
+nav ul li{ list-style:none; margin-bottom:.2em; }
+nav ul li{ display:inline-block; margin-right:1em; }
+
+
+header nav ul li a,
+nav ul li a{
+  font-family:"eco",sans-serif;     
+  font-weight:700;
+  letter-spacing:.05em;
+  font-size:1.25em;
+  color:#111111;
+}
+header nav ul li a:hover,
+nav ul li a:hover{ color:#205AA9; }
+
+/* === Headings (Eco) === */
+h2, h3,
+section.mainstory h2,
+section.secondarystory h2,
+section.tertiarystory h2,
+aside h2,
+article h2,
+.shows-section h3,
+.show>summary{
+  font-family:"eco",sans-serif;
+  font-weight:700;
+  font-style:normal;
+}
+
+h2{
+  color:#A82222;
+  font-size:2.5em;
+  margin:.1em .2em 0;
+  letter-spacing:.05em;
+}
+
+h3{
+  font-size:1.5em;
+  margin:1em 0 .5em;
+  color:#111111;
+}
+
+/* Body text blocks (Amifer) */
+p{ margin:0 .5em 2em; }
+article p{ margin:0 .6em 2em; }
+figcaption{ margin:.3em .5em 2em; font-style:italic; color:#555555; }
+p, article p, figcaption, aside p,
+.shows-lede, .meta, .sources, .shows-totals{
+  font-family:"amifer",sans-serif;
+}
+
+/* Secondary story */
+section.secondarystory h2{
+  font-size:1.65em;
+  margin:.3em .3em .1em;
+  color:#A82222;
+}
+
+/* Sidebar */
+section.tertiarystory h2{
+  border-top:2px solid #888888;
+  padding-top:.5em;
+  font-size:1.1em;
+  margin:0 .50em .2em;
+  color:#111111;
+}
+aside h2{ font-size:1.1em; margin:.3em .50em .2em; color:#111111; }
+
+/* Hover heading color */
+section.tertiarystory a:hover h2,
+aside a:hover h2{ color:#205AA9; }
+
+/* Main feature heading color */
+section.mainstory h2{ color:#A82222; }
+
+/* Footer */
+footer{
+  color:#F5F5F5; background:#222222;
+  padding:.1em; height:3em; line-height:3em; box-sizing:border-box;
+  font-family:"amifer",sans-serif;
+}
+
+/* Aside block */
+aside{ background:#EFEFEF; padding-top:1em; margin-top:0; }
+
+/* Hover story effect */
+section.mainstory a:hover h2,
+section.secondarystory a:hover h2{ color:#205AA9; }
+
+/* === Responsive === */
+@media only screen and (min-width:40em){
+  img, svg, h1, a, nav ul li, nav, nav ul li a, h2, p,
+  section.secondarystory h2, section.tertiarystory h2,
+  figcaption, article h2, article p, aside, aside h2, aside p{
+    margin-left:0;
+  }
+}
+
+@media only screen and (min-width:60em){
+
+  div.home-container{
+    max-width:80em; padding:0 1em;
+    display:grid; grid-template-columns:3fr 1fr; grid-gap:1em;
+  }
+  div.container{
+    max-width:80em; padding:0 1em;   
+    display:grid; grid-template-columns:3fr 1fr; grid-gap:1em;
+  }
+  header, footer{ grid-column:1/3; }
+
+  div.home-container main{
+    display:grid; grid-template-columns:repeat(3,1fr); grid-gap:1em;
+  }
+  div.home-container aside{ background:none; padding:0; margin-top:0; }
+
+  div.container aside{ margin-top:0; }
+
+  section.mainstory{
+    grid-column:2/4; grid-row:1/3; display:flex;
+  }
+  section.mainstory a{ display:flex; flex-direction:column; flex:1 0 12em; }
+  section.mainstory a figure{ flex:1 0 12em; display:flex; }
+  section.mainstory a figure img{ object-fit:cover; }
+  section.mainstory a h2{ flex:0 0 1em; }
+  section.mainstory a p{ flex:0 0 4em; }
+}
+
+/* === Gallery === */
+main.gallery{ max-width:58rem; margin:0 auto; padding:1.25em; }
+main.gallery .gallery-toggle,
+.gallery .gallery-toggle,
+.gallery input[type="radio"]{ position:absolute; opacity:0; pointer-events:none; }
+
+main.gallery .frames{
+  position:relative; width:100%; aspect-ratio:4/3;
+  background:#DDD; border-radius:10px; overflow:hidden;
+  box-shadow:0 8px 24px rgba(0,0,0,.35);
+}
+main.gallery .frames figure{ position:absolute; inset:0; margin:0; display:none; }
+main.gallery .frames img{ width:100%; height:100%; object-fit:cover; }
+main.gallery .frames figcaption{
+  position:absolute; left:0; right:0; bottom:0;
+  padding:.6em .8em;
+  background:rgba(34,34,34,.88);
+  color:#F5F5F5; font-weight:bold;
+}
+
+.gallery-toggle:nth-of-type(1):checked ~ .frames figure:nth-of-type(1),
+.gallery-toggle:nth-of-type(2):checked ~ .frames figure:nth-of-type(2),
+.gallery-toggle:nth-of-type(3):checked ~ .frames figure:nth-of-type(3),
+.gallery-toggle:nth-of-type(4):checked ~ .frames figure:nth-of-type(4),
+.gallery-toggle:nth-of-type(5):checked ~ .frames figure:nth-of-type(5),
+.gallery-toggle:nth-of-type(6):checked ~ .frames figure:nth-of-type(6),
+.gallery-toggle:nth-of-type(7):checked ~ .frames figure:nth-of-type(7),
+.gallery-toggle:nth-of-type(8):checked ~ .frames figure:nth-of-type(8),
+.gallery-toggle:nth-of-type(9):checked ~ .frames figure:nth-of-type(9){ display:block; }
+
+.gallery-nav{
+  display:flex; flex-wrap:wrap; gap:.75em; margin-top:1em;
+}
+.gallery-nav label{
+  width:6rem; height:6rem; border-radius:8px; overflow:hidden; cursor:pointer;
+  box-shadow:0 2px 8px rgba(0,0,0,.35);
+}
+.gallery-nav img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* === Shows  === */
+main.shows{ max-width:60em; margin:1.25em auto 2.5em; padding:0 .5em; }
+.shows-lede{ margin:.25em .5em 1.25em; color:#333333; line-height:1.5; }
+
+.shows-jump{
+  display:flex; flex-wrap:wrap; gap:.5em 1em; align-items:center;
+  margin:0 .5em 1.5em; border-top:2px solid #888888; padding-top:.75em;
+}
+.shows-jump a{
+  font-family:"eco",sans-serif;       
+  font-weight:700; letter-spacing:.03em; color:#111111;
+}
+.shows-jump a:hover{ color:#205AA9; }
+.shows-jump .sep{ opacity:.4; }
+
+.shows-section{ margin:1.5em 0 2em; }
+.shows-section h3{
+  font-family:"eco",sans-serif; font-weight:700; letter-spacing:.04em;
+  font-size:1.4em; color:#111111; margin:.25em .5em .5em;
+  border-left:4px solid #A82222; padding-left:.5em;
+}
+
+.show{
+  background:#FFFFFF; border:1px solid #E5E5E5; border-radius:10px;
+  margin:.5em .5em 1em; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,.04);
+}
+.show>summary{
+  cursor:pointer; list-style:none; padding:.85em 1em;
+  font-family:"eco",sans-serif; font-weight:700; letter-spacing:.03em;
+  color:#111111; display:flex; flex-wrap:wrap; gap:.5em 1em; align-items:baseline;
+  border-bottom:1px solid #EFEFEF;
+}
+.show>summary::-webkit-details-marker{ display:none; }
+.show>summary:hover{ color:#205AA9; }
+
+.best-badge{
+  display:inline-block; margin-right:.6em; padding:.15em .5em;
+  border:1px solid #A82222; color:#A82222; font-weight:700;
+  letter-spacing:.04em; font-size:.75em; border-radius:.4em;
+}
+.meta{ padding:.75em 1em 0; font-size:.95em; color:#555555; }
+.setlist{ padding:.5em 1.2em 1em 2em; margin:0; }
+.setlist li{ margin:.15em 0; color:#111111; }
+.sources{
+  padding:0 1em 1.1em; color:#555555; font-size:.9em; border-top:1px dashed #E5E5E5; margin-top:.5em;
+}
+.shows-totals{
+  margin:1em .75em 0; padding:.75em 1em; border:1px solid #E5E5E5; border-radius:.6em; background:#FAFAFA; font-size:.95em;
+}
+
+
+header nav ul li a{ font-family:"eco",sans-serif !important; }

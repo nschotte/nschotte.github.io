@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Photo Gallery</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.typekit.net/wbh2wtg.css">
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="index.html"><img src="logo.svg" alt="Site logo"></a>
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="shows.html">Shows</a></li>
+        <li><a href="mainstory.html">Shakedown</a></li>
+        <li><a href="#">Archive</a></li>
+        <li><a href="photogallery.html">Gallery</a></li>
+        <li><a href="newsletter.html">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallery">
+    <!-- Gallery Toggle Radios -->
+    <input type="radio" name="gallery" id="g1" class="gallery-toggle" checked>
+    <input type="radio" name="gallery" id="g2" class="gallery-toggle">
+    <input type="radio" name="gallery" id="g3" class="gallery-toggle">
+    <input type="radio" name="gallery" id="g4" class="gallery-toggle">
+    <input type="radio" name="gallery" id="g5" class="gallery-toggle">
+    <input type="radio" name="gallery" id="g6" class="gallery-toggle">
+    <input type="radio" name="gallery" id="g7" class="gallery-toggle">
+    <input type="radio" name="gallery" id="g8" class="gallery-toggle">
+    <input type="radio" name="gallery" id="g9" class="gallery-toggle">
+
+    <!-- Full-size frames -->
+    <div class="frames">
+      <figure>
+        <img src="sphere-inside.jpg" alt="Sphere interior">
+        <figcaption>Inside the Sphere</figcaption>
+      </figure>
+      <figure>
+        <img src="sound-wall.jpg" alt="Wall of Sound">
+        <figcaption>The Wall of Sound (1974)</figcaption>
+      </figure>
+      <figure>
+        <img src="small-concert.jpg" alt="Small concert">
+        <figcaption>Intimate Dead show</figcaption>
+      </figure>
+      <figure>
+        <img src="shakedown-street-sf.jpg" alt="Shakedown Street San Francisco">
+        <figcaption>Shakedown Street, SF</figcaption>
+      </figure>
+      <figure>
+        <img src="sf-symphony.jpg" alt="San Francisco Symphony">
+        <figcaption>SF Symphony tribute</figcaption>
+      </figure>
+      <figure>
+        <img src="kendy-honor.jpg" alt="Kennedy Center Honors">
+        <figcaption>Kennedy Center Honors</figcaption>
+      </figure>
+      <figure>
+        <img src="fans-recording.jpg" alt="Fans recording with microphones">
+        <figcaption>Tapers’ Section</figcaption>
+      </figure>
+      <figure>
+        <img src="fans-in-background.jpg" alt="Fans in stadium background">
+        <figcaption>Deadhead audience</figcaption>
+      </figure>
+      <figure>
+        <img src="bob-weir-john-mayer.jpg" alt="Bob Weir and John Mayer performing">
+        <figcaption>Bob Weir &amp; John Mayer</figcaption>
+      </figure>
+    </div>
+
+
+    <nav class="gallery-nav">
+      <label for="g1"><img src="sphere-inside.jpg" alt="Sphere interior thumbnail"></label>
+      <label for="g2"><img src="sound-wall.jpg" alt="Wall of Sound thumbnail"></label>
+      <label for="g3"><img src="small-concert.jpg" alt="Small concert thumbnail"></label>
+      <label for="g4"><img src="shakedown-street-sf.jpg" alt="Shakedown Street thumbnail"></label>
+      <label for="g5"><img src="sf-symphony.jpg" alt="San Francisco Symphony thumbnail"></label>
+      <label for="g6"><img src="kendy-honor.jpg" alt="Kennedy Center Honors thumbnail"></label>
+      <label for="g7"><img src="fans-recording.jpg" alt="Tapers section thumbnail"></label>
+      <label for="g8"><img src="fans-in-background.jpg" alt="Fans in stadium thumbnail"></label>
+      <label for="g9"><img src="bob-weir-john-mayer.jpg" alt="Bob Weir and John Mayer thumbnail"></label>
+    </nav>
+  </main>
+
+  <footer>
+    <p>© 2025 The Long Strange Trip</p>
+  </footer>
+</body>
+</html>

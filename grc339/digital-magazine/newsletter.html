@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/wbh2wtg.css">
+    <title>Subscribe — The Long Strange Trip</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="index.html"><img src="logo.svg" alt="The Long Strange Trip logo"></a></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">News</a></li>
+            <li><a href="shows.html">Shows</a></li>
+            <li><a href="mainstory.html">Shakedown</a></li>
+           <li><a href="photogallery.html">Gallery</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="subscribe">
+        <section class="subscribe-copy">
+          <h2>Subscribe to our Newsletter</h2>
+          <p>Get new stories, show notes, and poster art drops in your inbox.</p>
+        </section>
+
+        <form class="subscribe-form" action="#" method="post">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Full name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+          </div>
+
+          <fieldset class="choices">
+            <legend>Pick your newsletters (choose any):</legend>
+            <label class="check">
+              <input type="checkbox" name="nl_shows" value="shows"> Show Announcements
+            </label>
+            <label class="check">
+              <input type="checkbox" name="nl_shakedown" value="shakedown"> Shakedown Vendors &amp; Style
+            </label>
+            <label class="check">
+              <input type="checkbox" name="nl_archive" value="archive"> Vault &amp; Poster Archive
+            </label>
+          </fieldset>
+
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+
+        <figure class="subscribe-image">
+          <img src="fans-in-background.jpeg" alt="Stadium crowd cheering at a Dead show.">
+          <figcaption>“Never miss a Sunday show.”</figcaption>
+        </figure>
+      </main>
+
+      <footer>
+        <p>© 2025 The Long Strange Trip</p>
+      </footer>
+    </div>
+  </body>
+</html>
